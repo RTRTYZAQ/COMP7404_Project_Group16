@@ -1154,7 +1154,7 @@ def main():
             compute_responsibilities(hdf5_file, N, opts.damping, opts.count)
             rows_sum = compute_rows_sum(hdf5_file, '/aff_prop_group/temporaries',
                                         N, opts.count, method = 'Pool')
-            print(rows_sum)
+            # print(rows_sum)
             compute_availabilities(hdf5_file, N, opts.damping, 
                                    opts.count, rows_sum)
             # have we reached convergence?
