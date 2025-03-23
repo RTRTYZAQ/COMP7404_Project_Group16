@@ -33,7 +33,7 @@ if __name__ == "__main__":
     result = {'SSE': float(Sum_of_Squared_Errors(data, labels)),
         'Silhouette Coefficient': float(Silhouette_Coefficient(data, labels)),
               'Calinski Harabasz': float(Calinski_Harabasz(data, labels)),
-              'Davies_Bouldin': float(Davies_Bouldin(data, labels))
+              'Davies Bouldin': float(Davies_Bouldin(data, labels))
               }
     print("\nMetrics:")
     print(result)
