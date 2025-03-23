@@ -3,6 +3,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def PCA_2d_with_centers(data, labels, centers):
+
+    if centers == None:
+        k = len(set(labels))  # 簇的数量
+        centers = np.zeros((k, data.shape[1]))  # 初始化质心矩阵
+        for i in range(k):
+            cluster_points = data[np.where(np.array(labels) == i)[0]]  # 获取属于第 i 个簇的所有点
+            centers[i] = np.mean(cluster_points, axis=0)  # 计算第 i 个簇的质心
+
     pca = PCA(n_components=2)
     data_pca = pca.fit_transform(data)
     centers_pca = pca.transform(centers)
