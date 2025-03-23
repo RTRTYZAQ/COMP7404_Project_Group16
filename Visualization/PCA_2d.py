@@ -4,7 +4,7 @@ import numpy as np
 
 def PCA_2d_with_centers(data, labels, centers):
 
-    if centers == None:
+    if len(centers) == 0:
         k = len(set(labels))  # 簇的数量
         centers = np.zeros((k, data.shape[1]))  # 初始化质心矩阵
         for i in range(k):

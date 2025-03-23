@@ -45,5 +45,5 @@ if __name__ == "__main__":
         if len(centers) != 0:
             PCA_2d_with_centers(data, labels, data[centers])
         else:
-            PCA_2d_with_centers(data, labels, None)
+            PCA_2d_with_centers(data, labels, centers)
     
