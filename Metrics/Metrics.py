@@ -4,6 +4,7 @@ import csv
 from Silhouette_Coefficient import Silhouette_Coefficient
 from Calinski_Harabasz import Calinski_Harabasz
 from Sum_of_Squared_Errors import Sum_of_Squared_Errors
+from Davies_Bouldin import Davies_Bouldin
 
 
 if __name__ == "__main__":
@@ -31,7 +32,8 @@ if __name__ == "__main__":
     
     result = {'SSE': float(Sum_of_Squared_Errors(data, labels)),
         'Silhouette Coefficient': float(Silhouette_Coefficient(data, labels)),
-              'Calinski Harabasz': float(Calinski_Harabasz(data, labels))
+              'Calinski Harabasz': float(Calinski_Harabasz(data, labels)),
+              'Davies_Bouldin': float(Davies_Bouldin(data, labels))
               }
     print("\nMetrics:")
     print(result)
