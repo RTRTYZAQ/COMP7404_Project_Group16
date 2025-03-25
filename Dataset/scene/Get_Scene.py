@@ -24,3 +24,17 @@ df_features.to_csv("scene_data.tsv", sep='\t', index=False, header=False)
 label_names = [attr[0] for attr in attributes[294:]]    # 标签列名
 df_labels = pd.DataFrame(labels)
 df_labels.to_csv("scene_target.tsv", sep='\t', index=False, header=False)
+
+# 生成二进制编码（例如 101000 表示 beach + mountain）
+df_labels['binary_code'] = df_labels.apply(
+    lambda row: ''.join(row.astype(int).astype(str)),
+    axis=1
+)
+
+# 转换为十进制整数（可选）
+df_labels['numeric_code'] = df_labels['binary_code'].apply(
+    lambda x: int(x, 2)
+)
+
+# 保存
+df_labels[['numeric_code']].to_csv("scene_target_numeric.tsv", sep='\t', index=False, header=False)

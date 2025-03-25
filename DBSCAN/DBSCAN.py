@@ -10,12 +10,14 @@ from sklearn.cluster import DBSCAN
 input_file = ['../Dataset/iris_data.tsv',
               '../Dataset/Olivetti_Faces/olivetti_faces.tsv',
               '../Dataset/wine/wine_data.tsv',
-              '../Dataset/scene/scene_data.tsv']
+              '../Dataset/scene/scene_data.tsv',
+              '../Dataset/moon/moon_data.tsv']
 # 输出文件路径
 output_file = ['DBSCAN_output/iris_labels.tsv',
                'DBSCAN_output/olivetti_labels.tsv',
                'DBSCAN_output/wine_labels.tsv',
-               'DBSCAN_output/scene_labels.tsv']
+               'DBSCAN_output/scene_labels.tsv',
+               'DBSCAN_output/moon_labels.tsv']
 
 for i in range(len(input_file)):
 
@@ -32,7 +34,9 @@ for i in range(len(input_file)):
     elif i == 2:
         model = DBSCAN(eps=50, min_samples=1)
     elif i == 3:
-        model = DBSCAN(eps=50, min_samples=1)
+        model = DBSCAN(eps=4.8, min_samples=1)
+    elif i == 4:
+        model = DBSCAN(eps=0.2, min_samples=1)
 
     # 进行聚类
     model.fit(X)
