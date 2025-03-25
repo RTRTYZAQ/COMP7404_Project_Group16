@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5e2edea-7082-40e8-a5c1-54e961588405" name="Changes" comment="datasets: wine, scene">
-      <change afterPath="$PROJECT_DIR$/Dataset/moon/Get_Moon.py" afterDir="false" />
+    <list default="true" id="a5e2edea-7082-40e8-a5c1-54e961588405" name="Changes" comment="datasets: moon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DBSCAN/DBSCAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DBSCAN/DBSCAN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DBSCAN/DBSCAN_output/scene_labels.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/DBSCAN/DBSCAN_output/scene_labels.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/scene/Get_Scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/scene/Get_Scene.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,14 @@
       <option name="project" value="LOCAL" />
       <updated>1742843274146</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="datasets: moon">
+      <created>1742888664921</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742888664921</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -70,6 +73,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="datasets: wine, scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="datasets: wine, scene" />
+    <MESSAGE value="datasets: moon" />
+    <option name="LAST_COMMIT_MESSAGE" value="datasets: moon" />
   </component>
 </project>
