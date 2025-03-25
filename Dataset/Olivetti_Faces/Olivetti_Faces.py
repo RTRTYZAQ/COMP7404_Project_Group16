@@ -5,9 +5,10 @@ from sklearn.decomposition import PCA
 # 读取 .npy 文件
 data = np.load('olivetti_faces.npy')
 data_reshaped = data.reshape(data.shape[0], -1)
-pca = PCA(n_components=16)
-data_pca = pca.fit_transform(data_reshaped)
-df = pd.DataFrame(data_pca).round(3)
+# pca = PCA(n_components=16)
+# data_pca = pca.fit_transform(data_reshaped)
+# df = pd.DataFrame(data_pca).round(3)
+df = pd.DataFrame(data_reshaped)
 df.to_csv('olivetti_faces.tsv', sep='\t', index=False, header=False)
 
 data = np.load('olivetti_faces_target.npy')
